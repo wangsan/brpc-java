@@ -100,6 +100,7 @@ public class HttpRpcProtocol extends AbstractProtocol {
             .serializeNulls()
             .disableHtmlEscaping()
             .serializeSpecialFloatingPointValues()
+            .setDateFormat("yyyy-MM-dd HH:mm:ss")
             .create();
     private static final JsonParser jsonParser = new JsonParser();
 
